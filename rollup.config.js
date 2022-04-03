@@ -1,38 +1,29 @@
 import { babel } from "@rollup/plugin-babel";
 import fileSize from "rollup-plugin-filesize";
-import { terser } from "rollup-plugin-terser";
 import typescript from "rollup-plugin-typescript2";
 import { readFile } from "fs/promises";
+import css from "rollup-plugin-import-css";
 
 function getConfig(libraryName) {
   return {
     input: "src/index.ts",
     output: [
       {
-        file: `./dist/${libraryName}.cjs.min.js`,
+        file: `./dist/${libraryName}.cjs.js`,
         format: "cjs",
       },
       {
-        file: `./dist/${libraryName}.min.js`,
+        file: `./dist/${libraryName}.esm.js`,
         format: "esm",
-      },
-      {
-        file: `./dist/${libraryName}.esm.min.js`,
-        format: "esm",
-      },
-      {
-        file: `./dist/${libraryName}.umd.min.js`,
-        format: "umd",
-        name: libraryName,
       },
     ],
     plugins: [
+      css(),
       typescript(),
       babel({
         babelHelpers: "bundled",
         presets: ["@babel/preset-env"],
       }),
-      terser(),
       fileSize(),
     ],
   };

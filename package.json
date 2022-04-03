@@ -1,9 +1,8 @@
 {
   "name": "sugar-high-theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The theme for sugar-high",
-  "main": "dist/default.cjs.js",
-  "module": "dist/default.esm.js",
+  "main": "style/default.css",
   "scripts": {
     "dev": "vite",
     "preview": "vite preview",
@@ -38,6 +37,7 @@
     "prettier-eslint": "^13.0.0",
     "rollup": "^2.70.1",
     "rollup-plugin-filesize": "^9.1.2",
+    "rollup-plugin-import-css": "^3.0.3",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.31.2",
     "tslib": "^2.3.1",
