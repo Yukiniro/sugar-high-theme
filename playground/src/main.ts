@@ -18,7 +18,9 @@ class Person() {
 const me = new Person("Yukiniro", 25);
 me.sayName();
 
-<Component>hello world</Component>
+<Component>
+  hello world
+</Component>
 `);
 
 app.innerHTML = `
