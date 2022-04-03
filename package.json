@@ -2,18 +2,18 @@
   "name": "sugar-high-theme",
   "version": "0.0.1",
   "description": "The theme for sugar-high",
-  "main": "index.ts",
+  "main": "dist/default.cjs.js",
+  "module": "dist/default.esm.js",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "npx eslint src/**",
     "prettier": "npx prettier src/** --write",
-    "test": "npx vitest",
-    "test:run": "npx vitest run",
-    "test:coverrage": "npx vitest --coverage",
     "publish": "npm publish"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "sugar-high",
     "theme",
@@ -41,7 +41,6 @@
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.31.2",
     "tslib": "^2.3.1",
-    "typescript": "^4.6.2",
-    "vitest": "^0.7.6"
+    "typescript": "^4.6.2"
   }
 }
