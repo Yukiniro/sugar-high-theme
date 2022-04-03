@@ -1,17 +1,23 @@
-# ssprojet
+# 🎨 sugar-high-theme
 
-The `ssprojet` is a template to start a simple project.
+The `sugar-high-theme` is a theme for `sugar-high`.
 
-## Features
+## Useage
 
-- `pnpm` - package manager
-- `vitest` - test library
-- `docusaurus` - document library
-- `prettier` - code style formate
-- `eslint` - code quality
+At first, you should install it.
 
-## How to use
+```shell
+npm i sugar-high-theme
+```
 
-You could use `degit Yukiniro/ssprojet your-project-name` to create a project.
+or
 
-If you have no `degit`. Please install it by `npm install -g degit`.
+```shell
+pnpm add sugar-high-theme
+```
+
+Them, import it in your project.
+
+```javascript
+import "sugar-high-theme"
+```
