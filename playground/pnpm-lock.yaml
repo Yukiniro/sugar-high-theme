@@ -1,12 +1,12 @@
 lockfileVersion: 5.3
 
 specifiers:
-  sugar-high: ^0.2.2
+  sugar-high: ^0.3.0
   typescript: ^4.5.4
   vite: ^2.9.0
 
 devDependencies:
-  sugar-high: 0.2.2
+  sugar-high: 0.3.0
   typescript: 4.6.3
   vite: 2.9.1
 
@@ -290,8 +290,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /sugar-high/0.2.2:
-    resolution: {integrity: sha512-sKww3kvbFge9dZ+HTOJPHKCSWAQwYqZFXtlICVuKJE2w4ihFLYKfXYKJAzu0T8igQiNI+t3XTMVwTNR5M6iAOQ==}
+  /sugar-high/0.3.0:
+    resolution: {integrity: sha512-3b1oCMAhRT2Z/0BdWxt+1LBIkHGHxZAyqjMl2MUky8N9TNCyChQpE/SqMJ9DsyXFT5MItYoBAJVpbUtA9iQaUQ==}
     dev: true
 
   /supports-preserve-symlinks-flag/1.0.0:
