@@ -1,3 +1,4 @@
+import '../../style/base.css'
 import '../../style/default.css'
 import { highlight } from 'sugar-high'
 
@@ -24,7 +25,7 @@ me.sayName();
 `);
 
 app.innerHTML = `
-  <pre class="language-javascript">
+  <pre>
     <code>
       ${code}
     </code>

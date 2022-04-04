@@ -10,7 +10,7 @@
  * jsxliterals
  */
 
-pre {
+code {
   color: #383a42;
   background: #fafafa;
 }
@@ -42,4 +42,11 @@ pre {
 
 .sh__jsxliterals {
   color: #c91243;
+}
+
+.sh__line::before {
+  content: attr(data-line-number);
+  margin-right: 24px;
+  text-align: right;
+  color: #a4a4a4;
 }
