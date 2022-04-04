@@ -1,8 +1,5 @@
-import { babel } from "@rollup/plugin-babel";
-import fileSize from "rollup-plugin-filesize";
-import typescript from "rollup-plugin-typescript2";
 import { readFile } from "fs/promises";
-import css from "rollup-plugin-import-css";
+import postcss from "rollup-plugin-postcss";
 
 function getConfig(libraryName) {
   return {
@@ -17,15 +14,7 @@ function getConfig(libraryName) {
         format: "esm",
       },
     ],
-    plugins: [
-      css(),
-      typescript(),
-      babel({
-        babelHelpers: "bundled",
-        presets: ["@babel/preset-env"],
-      }),
-      fileSize(),
-    ],
+    plugins: [postcss()],
   };
 }
 
