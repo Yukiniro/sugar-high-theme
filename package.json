@@ -10,7 +10,7 @@
     "build": "npx rollup -c rollup.config.js",
     "lint": "npx eslint src/**",
     "prettier": "npx prettier src/** --write",
-    "publish": "npm publish"
+    "publish": "npm run build && npm publish"
   },
   "files": [
     "dist"
