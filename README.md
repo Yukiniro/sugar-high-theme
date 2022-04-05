@@ -1,5 +1,8 @@
 # 🎨 sugar-high-theme
 
+![npm](https://img.shields.io/npm/v/sugar-high-theme)
+![GitHub](https://img.shields.io/github/license/yukiniro/sugar-high-theme)
+
 The `sugar-high-theme` is a theme for `sugar-high`.
 
 ## Useage
