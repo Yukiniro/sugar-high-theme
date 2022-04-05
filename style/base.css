@@ -1,3 +1,7 @@
+pre {
+  white-space: pre-wrap;
+}
+
 code {
   display: inline-block;
   border-radius: 12px;

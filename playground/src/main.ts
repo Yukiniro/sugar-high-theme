@@ -1,9 +1,10 @@
-import '../../style/base.css'
-import '../../style/default.css'
-import { highlight } from 'sugar-high'
+import "../../style/base.css";
+import "../../style/default.css";
+import { highlight } from "sugar-high";
 
-const app = document.querySelector<HTMLDivElement>('#app')!;
-const code = highlight(`
+const app = document.querySelector<HTMLDivElement>("#app")!;
+const code = highlight(
+  `
 class Person() {
   constructor(name, age) {
     this._name = name;
@@ -22,12 +23,7 @@ me.sayName();
 <Component>
   hello world
 </Component>
-`);
+`.trim()
+);
 
-app.innerHTML = `
-  <pre>
-    <code>
-      ${code}
-    </code>
-  </pre>
-`
+app.innerHTML = `<pre><code>${code}</code></pre>`;

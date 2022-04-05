@@ -13,6 +13,9 @@
 code {
   color: #383a42;
   background: #fafafa;
+  font-size: 16px;
+  line-height: 1.4em;
+  padding: 16px 16px;
 }
 
 .sh__identifier {
@@ -45,6 +48,8 @@ code {
 }
 
 .sh__line::before {
+  display: inline-block;
+  width: 24px;
   content: attr(data-line-number);
   margin-right: 24px;
   text-align: right;
