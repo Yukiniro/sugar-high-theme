@@ -22,6 +22,7 @@ me.sayName();
 
 <Component>
   hello world
+  <SubComponent>I am subcontent</SubComponent>
 </Component>
 `.trim()
 );
